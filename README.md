@@ -8,14 +8,14 @@ This is a simple command-line tool written in C that uses the AES-256 encryption
 - Automatically generates and saves a random 32-byte key.
 
 ## Prerequisite 
-- OpenSSL
+- `OpenSSL`
 
 ## Installation
 
 Step 1: Install Required Packages
 Install the necessary packages for compiling and running C programs:
 
-pkg install clang openssl
+`apt install clang openssl`
 
 Step 2: Compile the Program
 Compile your C program using clang:
@@ -46,7 +46,7 @@ Example:
 
 This will read the key from decrypt_code.txt and use it to decrypt the file.
 
-Example Workflow in Cli
+Encryption Example Workflow in Cli
 Create a Sample Input File:
 echo "This is a test file." > input.txt
 
