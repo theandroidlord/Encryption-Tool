@@ -20,29 +20,29 @@ Install the necessary packages for compiling and running C programs:
 Step 2: Compile the Program
 Compile your C program using clang:
 
-clang -o encrypt_tool encrypt_tool.c -lssl -lcrypto
+`clang -o encrypt_tool encrypt_tool.c -lssl -lcrypto`
 
 # Usage
 
 Encrypt a File
 To encrypt a file, use the following command:
 
-./encrypt_tool encrypt <input file> <output file>
+`./encrypt_tool encrypt <input file> <output file>`
 
 Example:
 
-./encrypt_tool encrypt input.txt encrypted.bin
+`./encrypt_tool encrypt input.txt encrypted.bin`
 
 This will generate a random 32-byte key and save it to decrypt_code.txt.
 
 Decrypt a File
 To decrypt a file, use the following command:
 
-./encrypt_tool decrypt <input file> <output file>
+`./encrypt_tool decrypt <input file> <output file>`
 
 Example:
 
-./encrypt_tool decrypt encrypted.bin decrypted.txt
+`./encrypt_tool decrypt encrypted.bin decrypted.txt`
 
 This will read the key from decrypt_code.txt and use it to decrypt the file.
 
@@ -51,16 +51,16 @@ Create a Sample Input File:
 echo "This is a test file." > input.txt
 
 Encrypt the File:
-./encrypt_tool encrypt input.txt encrypted.bin
+`./encrypt_tool encrypt input.txt encrypted.bin`
 
 Decrypt the File:
-./encrypt_tool decrypt encrypted.bin decrypted.txt
+`./encrypt_tool decrypt encrypted.bin decrypted.txt`
 
 Check the Decrypted File:
-cat decrypted.txt
+`cat decrypted.txt`
 
 View the Generated Key:
-cat decrypt_code.txt
+`cat decrypt_code.txt`
 
 # contact
 sr.developer@linuxmail.org
